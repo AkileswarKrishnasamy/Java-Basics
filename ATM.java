@@ -16,7 +16,6 @@ public class ATM{
         this.scanner = scanner;
         if(pinNumber == PIN){
             Authencation = true;
-            System.out.println("Authencation Successful\n");
         }
         else{
             Authencation = false;
@@ -66,6 +65,7 @@ public class ATM{
         
         int optionChosen = 0;
         if(atm.Authencation) {
+            System.out.println("Authencation Successful\n");
             while(optionChosen!=4){
         System.out.println("Press 1 for balance\nPress 2 to add amount\nPress 3 to take amount\nPress 4 to exit");
          optionChosen = scanner.nextInt();
